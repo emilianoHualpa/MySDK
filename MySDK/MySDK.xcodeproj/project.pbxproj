@@ -22,6 +22,20 @@
 			remoteGlobalIDString = 26D4F10A220454DF00DCA9BC;
 			remoteInfo = MySDK;
 		};
+		26D4F1822204586A00DCA9BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D4F17D2204586A00DCA9BC /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 26D4F15A2204585A00DCA9BC;
+			remoteInfo = Demo;
+		};
+		26D4F1842204586A00DCA9BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D4F17D2204586A00DCA9BC /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 26D4F16E2204585A00DCA9BC;
+			remoteInfo = DemoTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +46,7 @@
 		26D4F119220454DF00DCA9BC /* MySDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySDKTests.swift; sourceTree = "<group>"; };
 		26D4F11B220454DF00DCA9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D4F1252204553100DCA9BC /* Milogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milogger.swift; sourceTree = "<group>"; };
+		26D4F17D2204586A00DCA9BC /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = ../Demo/Demo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 		26D4F101220454DF00DCA9BC = {
 			isa = PBXGroup;
 			children = (
+				26D4F17D2204586A00DCA9BC /* Demo.xcodeproj */,
 				26D4F10D220454DF00DCA9BC /* MySDK */,
 				26D4F118220454DF00DCA9BC /* MySDKTests */,
 				26D4F10C220454DF00DCA9BC /* Products */,
@@ -88,6 +104,15 @@
 				26D4F11B220454DF00DCA9BC /* Info.plist */,
 			);
 			path = MySDKTests;
+			sourceTree = "<group>";
+		};
+		26D4F17E2204586A00DCA9BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26D4F1832204586A00DCA9BC /* Demo.app */,
+				26D4F1852204586A00DCA9BC /* DemoTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +195,12 @@
 			mainGroup = 26D4F101220454DF00DCA9BC;
 			productRefGroup = 26D4F10C220454DF00DCA9BC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26D4F17E2204586A00DCA9BC /* Products */;
+					ProjectRef = 26D4F17D2204586A00DCA9BC /* Demo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				26D4F10A220454DF00DCA9BC /* MySDK */,
@@ -177,6 +208,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26D4F1832204586A00DCA9BC /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 26D4F1822204586A00DCA9BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26D4F1852204586A00DCA9BC /* DemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoTests.xctest;
+			remoteRef = 26D4F1842204586A00DCA9BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		26D4F109220454DF00DCA9BC /* Resources */ = {
